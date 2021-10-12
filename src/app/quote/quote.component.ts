@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,'dave', 'jon snow', 'Winter is coming', new Date(2020,3,14)),
-    new Quote(2,'waru', 'some guy', 'uliza kiatu', new Date(2021,11,9)),
+    new Quote(1,'dave', 'jon snow', 'Winter is coming', new Date(2021,3,14)),
+    new Quote(2,'waru', 'some guy', 'uliza kiatu', new Date(2021,6,9)),
     
   ];
 
