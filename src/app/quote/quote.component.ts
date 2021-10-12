@@ -20,9 +20,15 @@ export class QuoteComponent implements OnInit {
     
   }
 
-  completeQuote(isComplete:any, index:number){
+  
+
+  deleteQuote(isComplete:any, index:number){
     if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
       this.quotes.splice(index,1);
+      }
     }
   }
 
