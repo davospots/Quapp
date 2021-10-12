@@ -5,7 +5,7 @@
         <div class="form-group">
   
             <label for="name">Name</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.yourname" name="yourname" #name='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Name is required</p>
             </div>
@@ -41,7 +41,7 @@
         <button class="btn btn-outline-primary">SUBMIT QUOTE</button>
     </form>
     <hr>
-    <p>NAME : {{newQuote.name}}</p>
+    <p>NAME : {{newQuote.yourname}}</p>
     <p>AUTHOR : {{newQuote.author}}</p>
     <p></p>
   </div>

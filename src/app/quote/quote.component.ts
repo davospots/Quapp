@@ -10,9 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote('dave', 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2020,3,14)),
-    new Quote('dave', 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,11,9)),
-    new Quote('dave', 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,12,12)),
+    new Quote('dave', 'jon snow', 'Find an online version and watch merlin find his son', new Date(2020,3,14)),
+    new Quote('dave', 'jon snow', 'Find an online version and watch merlin find his son', new Date(2021,11,9)),
+    new Quote('dave', 'jon snow', 'Find an online version and watch merlin find his son', new Date(2021,12,12)),
   ];
 
   addNewQuote(quote:Quote){
