@@ -1,6 +1,6 @@
-<p>{{quote.author}}</p>
-<p>{{quote.yourname}}</p>
-<p>{{quote.completeDate|dateCount}}</p>
+<p>{{quote.name}}</p>
+
+<p>last submitted :<span > {{quote.completeDate|dateCount}}</span></p>
 <div class="col-md-6">
     <i (click)='likeBtnClick()' class="fas fa-smile-beam fa-2x smile"></i>
     {{likes}}  &nbsp;&nbsp;&nbsp;
