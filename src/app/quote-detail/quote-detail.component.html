@@ -1,3 +1,11 @@
 <p>{{quote.author}}</p>
+<p>{{quote.yourname}}</p>
 <p>{{quote.completeDate|dateCount}}</p>
+<div class="col-md-6">
+    <i (click)='likeBtnClick()' class="fas fa-smile-beam fa-2x smile"></i>
+    {{likes}}  &nbsp;&nbsp;&nbsp;
+      <i (click)='dislikeBtnClick()' class="fas fa-angry fa-2x angry"></i>
+    {{dislikes}}
+</div>
+
 <button class="btn btn-outline-danger" (click)= 'quoteDelete(true)'>Delete Quote</button>

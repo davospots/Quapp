@@ -1,5 +1,6 @@
+import { Quote } from './../quote';
 import { Component, OnInit } from '@angular/core';
-import { Quote } from '../quote';
+
 
 @Component({
   selector: 'app-quote',
@@ -9,10 +10,18 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2020,3,14)),
-    new Quote(2, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,11,9)),
-    new Quote(3, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,12,12)),
+    new Quote('dave', 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2020,3,14)),
+    new Quote('dave', 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,11,9)),
+    new Quote('dave', 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,12,12)),
   ];
+
+  addNewQuote(quote:Quote){
+    let quoteLength = this.quotes.length;
+    
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+
   
   toggleDetails(index: number){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
