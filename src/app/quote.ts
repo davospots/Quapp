@@ -5,7 +5,7 @@ export class Quote {
 
     showAuthor: boolean;
     constructor(
-        
+        public id: number,
         public yourname: string,
         public author: string,
         public name : string,
