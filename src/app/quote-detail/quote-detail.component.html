@@ -1,4 +1,4 @@
-<p>{{quote.name}}</p>
+<p><span>{{quote.name}}</span></p>
 
 <p>last submitted :<span > {{quote.completeDate|dateCount}} days ago</span></p>
 <div class="col-md-6">
@@ -6,6 +6,8 @@
     {{likes}}  &nbsp;&nbsp;&nbsp;
       <i (click)='dislikeBtnClick()' class="fas fa-angry fa-2x angry"></i>
     {{dislikes}}
+    <i class="fas fa-trash fa-2x trash"  (click)= 'quoteDelete(true)'></i>    
 </div>
 
-<button class="btn btn-outline-danger" (click)= 'quoteDelete(true)'>Delete Quote</button>
+<!-- <button class="btn btn-outline-danger" (click)= 'quoteDelete(true)'>Delete Quote</button> -->
+

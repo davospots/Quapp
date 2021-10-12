@@ -5,3 +5,12 @@
 .fa-angry{
     color: orangered;
 }
+
+.fa-trash{
+    color: chocolate;
+}
+
+span{
+    font-size: larger;
+    font-weight: bold;
+}
